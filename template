@@ -1,0 +1,23 @@
+import sys
+import itertools
+import more_itertools
+import re
+import math
+import collection
+#import networkx as nx
+#from matplotlib import pyplot as plt
+
+
+def parseLine(line,n):
+    print(n,line)
+
+def parseStdin():
+    for l, line in enumerate(sys.stdin):
+        parseLine(line.rstrip(),l)
+
+def parseFile(filename):
+    with open(filename,"r") as f:
+        for l, line in enumerate(f):
+            parseLine(line.rstrip(),l)
+
+parseFile(sys.argv[1])
