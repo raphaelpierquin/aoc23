@@ -3,7 +3,7 @@ import itertools
 import more_itertools
 import re
 import math
-import collection
+import collections
 #import networkx as nx
 #from matplotlib import pyplot as plt
 
